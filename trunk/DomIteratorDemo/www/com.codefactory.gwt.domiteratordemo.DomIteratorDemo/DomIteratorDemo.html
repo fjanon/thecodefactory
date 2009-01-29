@@ -1,0 +1,2664 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>ClassSelectorDemo</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="com.codefactory.gwt.domiteratordemo.DomIteratorDemo.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+
+  <body id='body1' class='theclassname'>
+
+	<div id='div1'>
+		<div id='div1-div1'>
+			<p id='div1-div1-p1' class='someotherclassname theclassname'>a p element with classname 'theclassname'</p>
+		</div>
+	</div>
+
+	<div id='div2' class='anotherclassname'>
+	</div>
+
+	<div id='div2a' class='anotherclassname'>
+		a text node
+	</div>
+
+	<div id='div3' class='theclassname'>
+	</div>
+
+	<div id='div3a' class='theclassname'>
+		a text node
+	</div>
+
+	<div id='div4' class='theclassname'>
+		<span>some text</span>
+		<span id='div4-span1' class='theclassname'>some other text</span>
+	</div>
+
+	<div id='div4a' class='theclassname'>
+		<span id='div4a-span1' class='theclassname'>some other text</span>
+		<span>some text</span>
+	</div>
+
+	<div id='div5' class='theclassname'>
+		<div id='div5-div1' class='theclassname'>
+			<p id='div5-div1-p1' class='someotherclassname theclassname'>a p element with classname 'theclassname'</p>
+		</div>
+	</div>
+
+	<div id='div6' class='theclassname'>
+		<div id='div6-div1'>
+			<!-- Comment: DOM structure used to test the getElementByClassname method -->
+			<span id='div6-div1-span1'>DOM structure used to test the getElementByClassname method</span>
+			<p id='div6-div1-p1'>a p element</p>
+			<p id='div6-div1-p2' class='someotherclassname theclassname'>a p element with classname 'theclassname'</p>
+		</div>
+	</div>
+
+	<div id='div7' class='classB classA'>
+		<div id='div7-div1'>
+			<p id='div7-div1-p1' class='classB classA classC'>a p element with classname 'theclassname'</p>
+		</div>
+	</div>
+
+	<div id='div8'>
+			<p id='div8-p1' class='classB classA classC'>a p element with classname 'theclassname'</p>
+			<p id='div8-p2' class='classA classB'>a p element with classname 'theclassname'</p>
+		</div>
+	</div>
+
+	<div id='div9'>
+		<div id='div10'>
+			<div id='div11'>
+			</div>
+		</div>
+	</div>
+
+	<div id='div12' class="class12">
+		<div id='div13' class="class13">
+			<div id='div121' class="class121">
+				<div id='div122' class="class122">
+				</div>
+			</div>
+			<div id='div123' class="class123">
+			</div>
+		</div>
+	</div>
+
+=====================================
+	<div id="globalWrapper"> 
+		<div id="column-content"> 
+	<div id="content"> 
+		<a name="top" id="top"></a> 
+		<div id="bodyContent"> 
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3> 
+			<div id="contentSub"></div> 
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content --> 
+			<p>The following tables compare general and technical information for a number of <a href="/wiki/Documentation_generator" title="Documentation generator">documentation generators</a>. Please see the individual products' articles for further information. This article is not all-inclusive or necessarily up-to-date. Unless otherwise specified in footnotes, comparisons are based on the stable versions without any add-ons, extensions or external programs.</p> 
+<table id="toc" class="toc" summary="Contents"> 
+<tr> 
+<td> 
+<div id="toctitle"> 
+<h2>Contents</h2> 
+</div> 
+<ul> 
+<li class="toclevel-1"><a href="#General_information"><span class="tocnumber">1</span> <span class="toctext">General information</span></a></li> 
+<li class="toclevel-1"><a href="#Operating_system_support"><span class="tocnumber">2</span> <span class="toctext">Operating system support</span></a></li> 
+<li class="toclevel-1"><a href="#Language_support"><span class="tocnumber">3</span> <span class="toctext">Language support</span></a></li> 
+<li class="toclevel-1"><a href="#Input_formats"><span class="tocnumber">4</span> <span class="toctext">Input formats</span></a></li> 
+<li class="toclevel-1"><a href="#Output_formats"><span class="tocnumber">5</span> <span class="toctext">Output formats</span></a></li> 
+<li class="toclevel-1"><a href="#Other_features"><span class="tocnumber">6</span> <span class="toctext">Other features</span></a></li> 
+</ul> 
+</td> 
+</tr> 
+</table> 
+<p><a name="General_information" id="General_information"></a></p> 
+<h2><span class="editsection">[<a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=edit&amp;section=1" title="Edit section: General information">edit</a>]</span> <span class="mw-headline">General information</span></h2> 
+<p>Basic general information about the generators: creator/company, license/price etc.</p> 
+<table class="sortable" border="1" cellpadding="1" cellspacing="0" style="font-size: 85%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: 100%;"> 
+<tr style="background: #ececec"> 
+<th>Name</th> 
+<th>Creator</th> 
+<th>First public release date</th> 
+<th>Latest stable version</th> 
+<th>Cost (<a href="/wiki/United_States_dollar" title="United States dollar">USD</a>)</th> 
+<th><a href="/wiki/Software_license" title="Software license">Software license</a></th> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Autoduck</th> 
+<td>Eric Artzt</td> 
+<td>1993</td> 
+<td>2.10<a href="http://www.ddj.com/cpp/184403427" class="external autonumber" title="http://www.ddj.com/cpp/184403427" rel="nofollow">[1]</a></td> 
+<td>Free</td> 
+<td><a href="/wiki/Freeware" title="Freeware">Freeware</a><a href="http://groups.google.com/group/comp.os.ms-windows.programmer.tools.misc/browse_thread/thread/f67546879884bf43" class="external autonumber" title="http://groups.google.com/group/comp.os.ms-windows.programmer.tools.misc/browse_thread/thread/f67546879884bf43" rel="nofollow">[2]</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">BI Documenter <a href="http://www.bidocumenter.com" class="external text" title="http://www.bidocumenter.com" rel="nofollow">URL</a></th> 
+<td>Mienasoft</td> 
+<td>2006</td> 
+<td>1.5</td> 
+<td>From $195</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DB Manual <a href="http://www.dbmanual.com" class="external text" title="http://www.dbmanual.com" rel="nofollow">URL</a></th> 
+<td>Blue Oceans Ltd</td> 
+<td>2006</td> 
+<td>1.3</td> 
+<td>from $99</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DBScribe <a href="http://www.leadum.com" class="external text" title="http://www.leadum.com" rel="nofollow">URL</a></th> 
+<td>Leadum Software</td> 
+<td>2007</td> 
+<td>1.1</td> 
+<td>from $39</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal Flow <a href="http://www.sgvsarc.com" class="external text" title="http://www.sgvsarc.com" rel="nofollow">URL</a></th> 
+<td>SGV Sarc, Inc</td> 
+<td>1999</td> 
+<td>4.00</td> 
+<td>From $249</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal REVS <a href="http://www.sgvsarc.com" class="external text" title="http://www.sgvsarc.com" rel="nofollow">URL</a></th> 
+<td>SGV Sarc, Inc</td> 
+<td>1999</td> 
+<td>4.00</td> 
+<td>From $399</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">classdoc</th> 
+<td>Jens Gulden</td> 
+<td>2001</td> 
+<td>1.0</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">CppDoc</th> 
+<td>Richard Feit</td> 
+<td><a href="/wiki/November_23" title="November 23">November 23</a>, <a href="/wiki/1998" title="1998">1998</a></td> 
+<td>2.3.1</td> 
+<td>Free</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Ddoc" title="Ddoc">Ddoc</a></th> 
+<td><a href="/wiki/Walter_Bright" title="Walter Bright">Walter Bright</a></td> 
+<td><a href="/wiki/September_19" title="September 19">September 19</a>, <a href="/wiki/2005" title="2005">2005</a></td> 
+<td>DMD 1.010 / GDC 0.14</td> 
+<td>Free</td> 
+<td><a href="/wiki/Freeware" title="Freeware">Freeware</a> / <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doc-O-Matic" title="Doc-O-Matic">Doc-O-Matic</a></th> 
+<td>toolsfactory software inc</td> 
+<td>Nov. 2000</td> 
+<td>6.1</td> 
+<td>from US$299, Free Express Edition</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DOC++</th> 
+<td>Dragos Acostachioaie.</td> 
+<td>December 22, 2002</td> 
+<td>3.4.10</td> 
+<td>Free</td> 
+<td>&#160;?</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Document!_X" title="Document! X">Document! X</a></th> 
+<td>Innovasys</td> 
+<td>1998</td> 
+<td>5.2.1.3</td> 
+<td>from US$599</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doxygen" title="Doxygen">Doxygen</a></th> 
+<td><a href="/wiki/Dimitri_van_Heesch" title="Dimitri van Heesch" class="mw-redirect">Dimitri van Heesch</a></td> 
+<td>1997</td> 
+<td>1.5.6</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Epydoc" title="Epydoc">Epydoc</a></th> 
+<td>Edward Loper</td> 
+<td>January 2002</td> 
+<td>2.1</td> 
+<td>Free</td> 
+<td><a href="/wiki/MIT_License" title="MIT License">MIT License</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">GenHelp <a href="http://www.frasersoft.net/genhelp" class="external text" title="http://www.frasersoft.net/genhelp" rel="nofollow">URL</a></th> 
+<td>FraserSoft</td> 
+<td>Oct. 1998</td> 
+<td>5.6.7</td> 
+<td>from US$209</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/HeaderDoc" title="HeaderDoc">HeaderDoc</a></th> 
+<td><a href="/wiki/Apple_Computer" title="Apple Computer" class="mw-redirect">Apple Computer</a></td> 
+<td>&#160;?</td> 
+<td>8.6</td> 
+<td>Free</td> 
+<td><a href="/wiki/Apple_Public_Source_License" title="Apple Public Source License">APSL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Help Generator <a href="http://www.helpgenerator.com" class="external text" title="http://www.helpgenerator.com" rel="nofollow">URL</a></th> 
+<td>Agora Software BV</td> 
+<td>August 2004</td> 
+<td>4.0</td> 
+<td>US$299</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Javadoc" title="Javadoc">Javadoc</a></th> 
+<td><a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a></td> 
+<td>1995</td> 
+<td>1.6</td> 
+<td>Free (Part of the <a href="/wiki/OpenJDK" title="OpenJDK">OpenJDK</a>)</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/JSDoc" title="JSDoc">JSDoc</a> <a href="http://jsdoc.sourceforge.net" class="external text" title="http://jsdoc.sourceforge.net" rel="nofollow">URL</a></th> 
+<td>Michael Mathews</td> 
+<td>July 2001</td> 
+<td>1.10.2</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/JSDoc" title="JSDoc">JsDoc Toolkit</a> <a href="http://jsdoctoolkit.org/" class="external text" title="http://jsdoctoolkit.org/" rel="nofollow">URL</a></th> 
+<td>Michael Mathews</td> 
+<td>2007?</td> 
+<td>2.0.0</td> 
+<td>Free</td> 
+<td><a href="/wiki/MIT_License" title="MIT License">MIT License</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">KDOC</th> 
+<td>Sirtaj Singh Kang</td> 
+<td>1999</td> 
+<td>3.0.1</td> 
+<td>Free</td> 
+<td>&#160;?</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Natural_Docs" title="Natural Docs">Natural Docs</a></th> 
+<td>Greg Valure</td> 
+<td><a href="/wiki/May_26" title="May 26">May 26</a>, <a href="/wiki/2003" title="2003">2003</a></td> 
+<td>1.4</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/NDoc" title="NDoc">NDoc</a></th> 
+<td>Kevin Downs</td> 
+<td><a href="/wiki/July_27" title="July 27">July 27</a>, <a href="/wiki/2003" title="2003">2003</a></td> 
+<td>1.3.1</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/PhpDocumentor" title="PhpDocumentor">phpDocumentor</a></th> 
+<td>Joshua Eichorn</td> 
+<td>2000</td> 
+<td>1.3.0</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">LGPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Project_Analyzer" title="Project Analyzer">Project Analyzer</a></th> 
+<td>Aivosto Oy</td> 
+<td></td> 
+<td>8.0</td> 
+<td>From US$299</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/RDoc" title="RDoc">RDoc</a></th> 
+<td>Dave Thomas</td> 
+<td><a href="/wiki/December_14" title="December 14">December 14</a>, <a href="/wiki/2001" title="2001">2001</a></td> 
+<td>in Ruby core</td> 
+<td>Free</td> 
+<td><a href="/wiki/Ruby_License" title="Ruby License">Ruby License</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/ROBODoc" title="ROBODoc">ROBODoc</a></th> 
+<td>Frans Slothouber</td> 
+<td><a href="/wiki/January_19" title="January 19">January 19</a>, <a href="/wiki/1995" title="1995">1995</a></td> 
+<td>4.99.36</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Sandcastle_(software)" title="Sandcastle (software)">Sandcastle</a></th> 
+<td><a href="/wiki/Microsoft" title="Microsoft">Microsoft</a></td> 
+<td>May 2008</td> 
+<td>2.4.10520</td> 
+<td>Free</td> 
+<td><a href="/wiki/Shared_source#Microsoft_Public_License_.28Ms-PL.29" title="Shared source">Ms-PL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">ThimbleDoc <a href="http://www.thimbleopensource.com/products/thimbledoc" class="external text" title="http://www.thimbleopensource.com/products/thimbledoc" rel="nofollow">URL</a></th> 
+<td>Thimbleopensource.com</td> 
+<td>2008</td> 
+<td>0.2beta</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td>PTLogica</td> 
+<td>2002</td> 
+<td>2008.0.406</td> 
+<td>US$169</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/w/index.php?title=SoDa_(software)&amp;action=edit&amp;redlink=1" class="new" title="SoDa (software) (page does not exist)">SoDa</a></th> 
+<td><a href="/wiki/IBM" title="IBM">IBM</a></td> 
+<td>July 2008</td> 
+<td>7.0</td> 
+<td>starting from $5,000</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td>PTLogica</td> 
+<td>2002</td> 
+<td>2008.0.406</td> 
+<td>US$169</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">VBDOX <a href="http://vbdox.sourceforge.net/" class="external text" title="http://vbdox.sourceforge.net/" rel="nofollow">URL</a></th> 
+<td>Mihayl Stamenov</td> 
+<td><a href="/wiki/October_26" title="October 26">October 26</a>, <a href="/wiki/2001" title="2001">2001</a></td> 
+<td>2.1.0</td> 
+<td>Free</td> 
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/VSdocman" title="VSdocman">VSdocman</a></th> 
+<td>Helixoft</td> 
+<td>Oct. 2000</td> 
+<td>3.5</td> 
+<td>from US$229</td> 
+<td><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">jGrouseDoc <a href="http://jgrouse.com/#jgdoc/jGrouseDoc.html" class="external text" title="http://jgrouse.com/#jgdoc/jGrouseDoc.html" rel="nofollow">URL</a></th> 
+<td>Denis Riabtchik</td> 
+<td>Apr. 2007</td> 
+<td>1.5</td> 
+<td>Free</td> 
+<td><a href="/wiki/BSD_License" title="BSD License" class="mw-redirect">BSD</a></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Haddock_(software)" title="Haddock (software)">Haddock</a></th> 
+<td>Simon Marlow</td> 
+<td>2002</td> 
+<td>2.0.0.0 (2008)</td> 
+<td>Free</td> 
+<td>BSD</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Universal Report <a href="http://www.omegacomputer.com" class="external text" title="http://www.omegacomputer.com" rel="nofollow">URL</a></th> 
+<td>Universal Software</td> 
+<td>2001-2008</td> 
+<td>8.1</td> 
+<td>$299</td> 
+<td>Free Education / <a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td> 
+</tr> 
+<tr class="sortbottom" style="background: #ececec"> 
+<th>Name</th> 
+<th>Creator</th> 
+<th>First public release date</th> 
+<th>Latest stable version</th> 
+<th>Cost (<a href="/wiki/United_States_dollar" title="United States dollar">USD</a>)</th> 
+<th><a href="/wiki/Software_license" title="Software license">Software license</a></th> 
+</tr> 
+</table> 
+<p><a name="Operating_system_support" id="Operating_system_support"></a></p> 
+<h2><span class="editsection">[<a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=edit&amp;section=2" title="Edit section: Operating system support">edit</a>]</span> <span class="mw-headline">Operating system support</span></h2> 
+<p>The <a href="/wiki/Operating_system" title="Operating system">operating systems</a> the generators can run on.</p> 
+<table class="sortable" border="1" cellpadding="1" cellspacing="0" style="font-size: 85%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: 100%; table-layout: fixed;"> 
+<tr style="background: #ececec"> 
+<th style="width:12em"></th> 
+<th><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></th> 
+<th><a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a></th> 
+<th><a href="/wiki/Linux" title="Linux">Linux</a></th> 
+<th><a href="/wiki/BSD" title="BSD" class="mw-redirect">BSD</a></th> 
+<th><a href="/wiki/Unix" title="Unix">Unix</a></th> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Autoduck</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">BI Documenter</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal Flow</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal REVS</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DB Manual</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DBScribe</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">classdoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">CppDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Ddoc" title="Ddoc">Ddoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_3_back"><a href="#fn_3" title="">3</a></sup></td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_3_back"><a href="#fn_3" title="">3</a></sup></td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doc-O-Matic" title="Doc-O-Matic">Doc-O-Matic</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DOC++</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No?</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No?</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No?</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Document!_X" title="Document! X">Document! X</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doxygen" title="Doxygen">Doxygen</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Epydoc" title="Epydoc">Epydoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">GenHelp</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/HeaderDoc" title="HeaderDoc">HeaderDoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Help Generator</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Javadoc" title="Javadoc">Javadoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JSDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JsDoc Toolkit</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">KDOC</th> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Natural_Docs" title="Natural Docs">Natural Docs</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/NDoc" title="NDoc">NDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/PhpDocumentor" title="PhpDocumentor">phpDocumentor</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Project_Analyzer" title="Project Analyzer">Project Analyzer</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/RDoc" title="RDoc">RDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/ROBODoc" title="ROBODoc">ROBODoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Sandcastle_(software)" title="Sandcastle (software)">Sandcastle</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">ThimbleDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">VBDOX</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/VSdocman" title="VSdocman">VSdocman</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">jGrouseDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr style="background: #ececec"> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Haddock_(software)" title="Haddock (software)">Haddock</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Universal Report</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th></th> 
+<th><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></th> 
+<th><a href="/wiki/Mac_OS_X" title="Mac OS X">Mac OS X</a></th> 
+<th><a href="/wiki/Linux" title="Linux">Linux</a></th> 
+<th><a href="/wiki/BSD" title="BSD" class="mw-redirect">BSD</a></th> 
+<th><a href="/wiki/Unix" title="Unix">Unix</a></th> 
+</tr> 
+</table> 
+<p><cite id="fn_3"><a href="#fn_3_back" title="">Note (4):</a></cite> GNU D Compiler.</p> 
+<p><a name="Language_support" id="Language_support"></a></p> 
+<h2><span class="editsection">[<a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=edit&amp;section=3" title="Edit section: Language support">edit</a>]</span> <span class="mw-headline">Language support</span></h2> 
+<p>Why only C#, Delphi and VBScript? Why not PHP, ZF, Phyton???</p> 
+<table class="metadata plainlinks ambox ambox-content" style=""> 
+<tr> 
+<td class="mbox-image"> 
+<div style="width: 52px;"><a href="/wiki/Image:Ambox_content.png" class="image" title="Ambox content.png"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40" border="0" /></a></div> 
+</td> 
+<td class="mbox-text" style=""><b>The factual accuracy of this section is <a href="/wiki/Wikipedia:Accuracy_dispute" title="Wikipedia:Accuracy dispute">disputed</a>.</b><br /> 
+<small>Please see the relevant discussion on the <a href="/wiki/Talk:Comparison_of_documentation_generators" title="Talk:Comparison of documentation generators">talk page</a>.<i>(March 2008)</i></small></td> 
+</tr> 
+</table> 
+<p>The <a href="/wiki/Programming_language" title="Programming language">programming languages</a> the generators recognize.</p> 
+<table border="1" cellpadding="1" cellspacing="0" style="font-size: 85%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: 100%; table-layout: fixed;"> 
+<tr style="background: #ececec"> 
+<th style="width:12em"></th> 
+<th><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>/<a href="/wiki/C%2B%2B" title="C++">C++</a></th> 
+<th><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></th> 
+<th><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></th> 
+<th><a href="/wiki/Visual_Basic" title="Visual Basic">VB</a> / <a href="/wiki/VBScript" title="VBScript">VBScript</a></th> 
+<th><a href="/wiki/Delphi_programming_language" title="Delphi programming language" class="mw-redirect">Delphi</a> / <a href="/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a></th> 
+<th><a href="/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a></th> 
+<th><a href="/wiki/D_programming_language" title="D programming language" class="mw-redirect">D</a></th> 
+<th><a href="/wiki/IDL_specification_language" title="IDL specification language">IDL</a></th> 
+<th><a href="/wiki/Microsoft_.NET" title="Microsoft .NET" class="mw-redirect">.NET</a><sup id="fn_1_back"><a href="#fn_1" title="">1</a></sup></th> 
+<th><a href="/wiki/Microsoft_Access" title="Microsoft Access">Access</a></th> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Autoduck</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">BI Documenter</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DB Manual</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DBScribe</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">classdoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">CppDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal Flow</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal REVS</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Ddoc" title="Ddoc">Ddoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doc-O-Matic" title="Doc-O-Matic">Doc-O-Matic</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DOC++</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Document!_X" title="Document! X">Document! X</a></th> 
+<td bgcolor="#FFFFDD"><a href="/wiki/C%2B%2B/CLI" title="C++/CLI">C++/CLI</a> only</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doxygen" title="Doxygen">Doxygen</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Epydoc" title="Epydoc">Epydoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">GenHelp</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/HeaderDoc" title="HeaderDoc">HeaderDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Help Generator</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Javadoc" title="Javadoc">Javadoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JSDoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JsDoc Toolkit</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">KDOC</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Natural_Docs" title="Natural Docs">Natural Docs</a></th> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/NDoc" title="NDoc">NDoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/PhpDocumentor" title="PhpDocumentor">phpDocumentor</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Project_Analyzer" title="Project Analyzer">Project Analyzer</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/RDoc" title="RDoc">RDoc</a></th> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/ROBODoc" title="ROBODoc">ROBODoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">VBDOX</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/VSdocman" title="VSdocman">VSdocman</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">jGrouseDoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Haddock_(software)" title="Haddock (software)">Haddock</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Universal Report</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr style="background: #ececec"> 
+<th></th> 
+<th><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>/<a href="/wiki/C%2B%2B" title="C++">C++</a></th> 
+<th><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></th> 
+<th><a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></th> 
+<th><a href="/wiki/Visual_Basic" title="Visual Basic">VB</a> / <a href="/wiki/VBScript" title="VBScript">VBScript</a></th> 
+<th><a href="/wiki/Delphi_programming_language" title="Delphi programming language" class="mw-redirect">Delphi</a> / <a href="/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a></th> 
+<th><a href="/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a></th> 
+<th><a href="/wiki/D_programming_language" title="D programming language" class="mw-redirect">D</a></th> 
+<th><a href="/wiki/IDL_specification_language" title="IDL specification language">IDL</a></th> 
+<th><a href="/wiki/Microsoft_.NET" title="Microsoft .NET" class="mw-redirect">.NET</a><sup id="fn_1_back"><a href="#fn_1" title="">1</a></sup></th> 
+<th><a href="/wiki/Microsoft_Access" title="Microsoft Access">Access</a></th> 
+</tr> 
+</table> 
+<table border="1" cellpadding="1" cellspacing="0" style="font-size: 85%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: 100%; table-layout: fixed;"> 
+<tr style="background: #ececec"> 
+<th style="width:12em"></th> 
+<th><a href="/wiki/PHP" title="PHP">PHP</a></th> 
+<th><a href="/wiki/Perl" title="Perl">Perl</a></th> 
+<th><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></th> 
+<th><a href="/wiki/Ruby_programming_language" title="Ruby programming language" class="mw-redirect">Ruby</a></th> 
+<th><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></th> 
+<th><a href="/wiki/ActionScript" title="ActionScript">ActionScript</a></th> 
+<th><a href="/wiki/PL/SQL" title="PL/SQL">PL/SQL</a></th> 
+<th><a href="/wiki/Tcl" title="Tcl">Tcl</a></th> 
+<th><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></th> 
+<th>Any With Comments<sup id="fn_2_back"><a href="#fn_2" title="">2</a></sup></th> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Autoduck</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">BI Documenter</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DB Manual</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DBScribe</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">classdoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">CppDoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal Flow</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal REVS</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Ddoc" title="Ddoc">Ddoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doc-O-Matic" title="Doc-O-Matic">Doc-O-Matic</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DOC++</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Document!_X" title="Document! X">Document! X</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doxygen" title="Doxygen">Doxygen</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Epydoc" title="Epydoc">Epydoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">GenHelp</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/HeaderDoc" title="HeaderDoc">HeaderDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Javadoc" title="Javadoc">Javadoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JSDoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JsDoc Toolkit</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">KDOC</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Natural_Docs" title="Natural Docs">Natural Docs</a></th> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/NDoc" title="NDoc">NDoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/PhpDocumentor" title="PhpDocumentor">phpDocumentor</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Project_Analyzer" title="Project Analyzer">Project Analyzer</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/RDoc" title="RDoc">RDoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/ROBODoc" title="ROBODoc">ROBODoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">ThimbleDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">VBDOX</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/VSdocman" title="VSdocman">VSdocman</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">jGrouseDoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Haddock_(software)" title="Haddock (software)">Haddock</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Universal Report</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr style="background: #ececec"> 
+<th></th> 
+<th><a href="/wiki/PHP" title="PHP">PHP</a></th> 
+<th><a href="/wiki/Perl" title="Perl">Perl</a></th> 
+<th><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></th> 
+<th><a href="/wiki/Ruby_programming_language" title="Ruby programming language" class="mw-redirect">Ruby</a></th> 
+<th><a href="/wiki/JavaScript" title="JavaScript">JavaScript</a></th> 
+<th><a href="/wiki/ActionScript" title="ActionScript">ActionScript</a></th> 
+<th><a href="/wiki/PL/SQL" title="PL/SQL">PL/SQL</a></th> 
+<th><a href="/wiki/Tcl" title="Tcl">Tcl</a></th> 
+<th><a href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></th> 
+<th>Any With Comments<sup id="fn_2_back"><a href="#fn_2" title="">2</a></sup></th> 
+</tr> 
+</table> 
+<p><cite id="fn_1"><a href="#fn_1_back" title="">Note (1):</a></cite> .NET is not a programming language, but is listed here for convenience.</p> 
+<p><cite id="fn_2"><a href="#fn_2_back" title="">Note (2):</a></cite> Generators listed here can be extended to support any language that has comments.</p> 
+<p><a name="Input_formats" id="Input_formats"></a></p> 
+<h2><span class="editsection">[<a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=edit&amp;section=4" title="Edit section: Input formats">edit</a>]</span> <span class="mw-headline">Input formats</span></h2> 
+<p>The input formats the generators can read.</p> 
+<table border="1" cellpadding="1" cellspacing="0" style="font-size: 85%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: 100%; table-layout: fixed;"> 
+<tr style="background: #ececec"> 
+<th style="width:12em"></th> 
+<th><a href="/wiki/Plain_text" title="Plain text">Text</a></th> 
+<th><a href="/wiki/Object_file" title="Object file">Binary</a></th> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Autoduck</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">BI Documenter</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DB Manual</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DBScribe</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">classdoc</th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">CppDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal Flow</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal REVS</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Ddoc" title="Ddoc">Ddoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doc-O-Matic" title="Doc-O-Matic">Doc-O-Matic</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DOC++</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No (except Java class files)</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Document!_X" title="Document! X">Document! X</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doxygen" title="Doxygen">Doxygen</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Epydoc" title="Epydoc">Epydoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">GenHelp</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/HeaderDoc" title="HeaderDoc">HeaderDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Help Generator</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Javadoc" title="Javadoc">Javadoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JSDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFFF">(n/a)</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JsDoc Toolkit</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFFF">(n/a)</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">KDOC</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Natural_Docs" title="Natural Docs">Natural Docs</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/NDoc" title="NDoc">NDoc</a></th> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/PhpDocumentor" title="PhpDocumentor">phpDocumentor</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Project_Analyzer" title="Project Analyzer">Project Analyzer</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/RDoc" title="RDoc">RDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/ROBODoc" title="ROBODoc">ROBODoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">VBDOX</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/VSdocman" title="VSdocman">VSdocman</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">jGrouseDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Haddock_(software)" title="Haddock (software)">Haddock</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Universal Report</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr style="background: #ececec"> 
+<th></th> 
+<th><a href="/wiki/Plain_text" title="Plain text">Text</a></th> 
+<th><a href="/wiki/Object_file" title="Object file">Binary</a></th> 
+</tr> 
+</table> 
+<p><a name="Output_formats" id="Output_formats"></a></p> 
+<h2><span class="editsection">[<a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=edit&amp;section=5" title="Edit section: Output formats">edit</a>]</span> <span class="mw-headline">Output formats</span></h2> 
+<p>The output formats the generators can write.</p> 
+<table border="1" cellpadding="1" cellspacing="0" style="font-size: 85%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: 100%; table-layout: fixed;"> 
+<tr style="background: #ececec"> 
+<th style="width:12em"></th> 
+<th><a href="/wiki/HTML" title="HTML">HTML</a></th> 
+<th><a href="/wiki/Microsoft_Compressed_HTML_Help" title="Microsoft Compressed HTML Help" class="mw-redirect">CHM</a></th> 
+<th><a href="/wiki/Rich_Text_Format" title="Rich Text Format">RTF</a></th> 
+<th><a href="/wiki/Portable_Document_Format" title="Portable Document Format">PDF</a></th> 
+<th><a href="/wiki/LaTeX" title="LaTeX">LaTeX</a></th> 
+<th><a href="/wiki/PostScript" title="PostScript">PostScript</a></th> 
+<th><a href="/wiki/Unix_manual" title="Unix manual" class="mw-redirect">man pages</a></th> 
+<th><a href="/wiki/DocBook" title="DocBook">DocBook</a></th> 
+<th><a href="/wiki/XML" title="XML">XML</a></th> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Autoduck</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">BI Documenter</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DB Manual</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DBScribe</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">classdoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">CppDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal Flow</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Crystal REVS</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Ddoc" title="Ddoc">Ddoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_4_back"><a href="#fn_4" title="">4</a></sup></td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_4_back2"><a href="#fn_4" title="">4</a></sup></td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_4_back3"><a href="#fn_4" title="">4</a></sup></td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_4_back4"><a href="#fn_4" title="">4</a></sup></td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_4_back5"><a href="#fn_4" title="">4</a></sup></td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes<sup id="fn_4_back6"><a href="#fn_4" title="">4</a></sup></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doc-O-Matic" title="Doc-O-Matic">Doc-O-Matic</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DOC++</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Document!_X" title="Document! X">Document! X</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doxygen" title="Doxygen">Doxygen</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Epydoc" title="Epydoc">Epydoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_5_back"><a href="#fn_5" title="">5</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_5_back2"><a href="#fn_5" title="">5</a></sup></td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">GenHelp</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/HeaderDoc" title="HeaderDoc">HeaderDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Help Generator</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Javadoc" title="Javadoc">Javadoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+<td bgcolor="#FFFFDD">Indirectly<sup id="fn_6_back"><a href="#fn_6" title="">6</a></sup></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JSDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td bgcolor="#FFFFFF">(planned)</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JsDoc Toolkit</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes+JSON</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">KDOC</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Natural_Docs" title="Natural Docs">Natural Docs</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/NDoc" title="NDoc">NDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/PhpDocumentor" title="PhpDocumentor">phpDocumentor</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Project_Analyzer" title="Project Analyzer">Project Analyzer</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Sandcastle_(software)" title="Sandcastle (software)">Sandcastle</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/RDoc" title="RDoc">RDoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/ROBODoc" title="ROBODoc">ROBODoc</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">ThimbleDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">VBDOX</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/VSdocman" title="VSdocman">VSdocman</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">jGrouseDoc</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Haddock_(software)" title="Haddock (software)">Haddock</a></th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td bgcolor="#FFFFDD">Partial</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr style="background: #ececec"> 
+<th style="text-align:left;" bgcolor="#ECECEC">Universal Report</th> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+<td style="background:#ff9090; color:black;" class="table-no">No</td> 
+</tr> 
+<tr> 
+<th></th> 
+<th><a href="/wiki/HTML" title="HTML">HTML</a></th> 
+<th><a href="/wiki/Microsoft_Compressed_HTML_Help" title="Microsoft Compressed HTML Help" class="mw-redirect">CHM</a></th> 
+<th><a href="/wiki/Rich_Text_Format" title="Rich Text Format">RTF</a></th> 
+<th><a href="/wiki/Portable_Document_Format" title="Portable Document Format">PDF</a></th> 
+<th><a href="/wiki/LaTeX" title="LaTeX">LaTeX</a></th> 
+<th><a href="/wiki/PostScript" title="PostScript">PostScript</a></th> 
+<th><a href="/wiki/Unix_manual" title="Unix manual" class="mw-redirect">man pages</a></th> 
+<th><a href="/wiki/DocBook" title="DocBook">DocBook</a></th> 
+<th><a href="/wiki/XML" title="XML">XML</a></th> 
+</tr> 
+</table> 
+<p><cite id="fn_4"><a href="#fn_4_back" title="">Note (4):</a></cite> Ddoc have macro system which can be customized to output any desired format. CHM, groff (manpages), XHTML, XML, LaTeX (so PostScript and PDF) was tested. They are not currently included in standard distribution. Standard HTML output also is generated using macros and can be redefined.</p> 
+<p><cite id="fn_5"><a href="#fn_5_back" title="">Note (5):</a></cite> Though not officially supported as an output format, Epydoc uses LaTeX and PostScript as intermediate steps to produce the final PDF documentation.</p> 
+<p><cite id="fn_6"><a href="#fn_6_back" title="">Note (6):</a></cite> Via <a href="/w/index.php?title=Doclet&amp;action=edit&amp;redlink=1" class="new" title="Doclet (page does not exist)">Doclets</a> from Third Parties</p> 
+<p><a name="Other_features" id="Other_features"></a></p> 
+<h2><span class="editsection">[<a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=edit&amp;section=6" title="Edit section: Other features">edit</a>]</span> <span class="mw-headline">Other features</span></h2> 
+<table border="1" cellpadding="1" cellspacing="0" style="font-size: 85%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: 100%; table-layout: fixed;"> 
+<tr style="background: #ececec"> 
+<th style="width:12em"></th> 
+<th>possibility of extended customization</th> 
+<th>generated diagrams</th> 
+<th>highlighting and linking of generated doc</th> 
+<th>parameter types extracted</th> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Autoduck</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">BI Documenter</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DB Manual</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DBScribe</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">classdoc</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">CppDoc</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Crystal_Flow" title="Crystal Flow" class="mw-redirect">Crystal Flow</a></th> 
+<td bgcolor="#90FF90">full customization for all output formats including JavaDoc format</td> 
+<td bgcolor="#90FF90">call and caller hierarchies, class hierarchies, include and include by hierarchies, module flowcharts, etc</td> 
+<td bgcolor="#90FF90">fully cross linked project wide, automatic intra-project links including in images, etc</td> 
+<td bgcolor="#90FF90">types extracted and linked, source code level linkage, Code Metrics, etc</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/w/index.php?title=Crystal_REVS&amp;action=edit&amp;redlink=1" class="new" title="Crystal REVS (page does not exist)">Crystal REVS</a></th> 
+<td bgcolor="#90EF90">full customization for all output formats including JavaDoc format</td> 
+<td bgcolor="#90EF90">call and caller hierarchies, class hierarchies, include and include by hierarchies, module flowcharts, etc</td> 
+<td bgcolor="#90EF90">fully cross linked project wide, automatic intra-project links including in images, etc</td> 
+<td bgcolor="#90EF90">types extracted and linked, source code level linkage, Code Metrics, etc</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Ddoc" title="Ddoc">Ddoc</a></th> 
+<td bgcolor="#90FF90">with macros</td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doc-O-Matic" title="Doc-O-Matic">Doc-O-Matic</a></th> 
+<td bgcolor="#90FF90">full customization for all output formats, template for MSDN and other lookalike output, custom XMLDoc/JavaDoc tags</td> 
+<td bgcolor="#90FF90">local, module and global graphical class hierarchies, local text class hierarchies</td> 
+<td bgcolor="#90FF90">fully cross linked project wide, automatic inter-project links, automatic links into framework documentation like MSDN, Borland/CodeGear Help</td> 
+<td bgcolor="#90FF90">types extracted and linked</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">DOC++</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Document!_X" title="Document! X">Document! X</a></th> 
+<td bgcolor="#90FF90">customizable HTML based templates, custom comment tags</td> 
+<td bgcolor="#90FF90">linked graphical object relationship diagrams</td> 
+<td bgcolor="#90FF90">internal links and links to .NET framework documentation</td> 
+<td bgcolor="#90FF90">types extracted and linked</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Doxygen" title="Doxygen">Doxygen</a></th> 
+<td bgcolor="#90FF90">with XSLT</td> 
+<td bgcolor="#90FF90">caller and callee graphs, dependency graphs, inheritance diagrams, collaboration diagrams</td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Epydoc" title="Epydoc">Epydoc</a></th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/HeaderDoc" title="HeaderDoc">HeaderDoc</a></th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Help Generator</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Javadoc" title="Javadoc">Javadoc</a></th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JSDoc</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">JsDoc Toolkit</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">KDOC</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Natural_Docs" title="Natural Docs">Natural Docs</a></th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/NDoc" title="NDoc">NDoc</a></th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/PhpDocumentor" title="PhpDocumentor">phpDocumentor</a></th> 
+<td bgcolor="#90FF90">Smarty-based templates</td> 
+<td bgcolor="#90FF90">class inheritance diagrams</td> 
+<td bgcolor="#90FF90">cross reference to generated documentation, and to php.net function reference</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Project_Analyzer" title="Project Analyzer">Project Analyzer</a></th> 
+<td></td> 
+<td bgcolor="#90FF90">File dependencies, inheritance, control flow, data flow, variable access, class instantiation, data
+<p>declaration, Form.Show order, procedure calls, project dependencies, file belongs to project, class cohesion.</p> 
+</td> 
+<td bgcolor="#90FF90">Cross-referenced source code</td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/RDoc" title="RDoc">RDoc</a></th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/ROBODoc" title="ROBODoc">ROBODoc</a></th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/TwinText" title="TwinText">TwinText</a></th> 
+<td bgcolor="#90FF90">20 CSS styles. Well documented CSS facilitates customization.</td> 
+<td bgcolor="#90FF90">ASCII diagramming and picture importing.</td> 
+<td bgcolor="#90FF90">Table of Contents, Index, and per-page cross referencing.</td> 
+<td bgcolor="#90FF90">Method/Function parameters extracted and linked.</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">VBDOX</th> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/VSdocman" title="VSdocman">VSdocman</a></th> 
+<td bgcolor="#90FF90">full customization for all output formats, templates for MSDN-like output, custom XML comment tags</td> 
+<td bgcolor="#90FF90">class inheritance tree</td> 
+<td bgcolor="#90FF90">internal links and links to .NET framework documentation</td> 
+<td bgcolor="#90FF90">types extracted and linked</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">jGrouseDoc</th> 
+<td bgcolor="#90FF90">With XSLT</td> 
+<td></td> 
+<td bgcolor="#90FF90">cross reference to generated documentation</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC"><a href="/wiki/Haddock_(software)" title="Haddock (software)">Haddock</a></th> 
+<td></td> 
+<td></td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+<td style="background:#90ff90; color:black;" class="table-yes">Yes</td> 
+</tr> 
+<tr> 
+<th style="text-align:left;" bgcolor="#ECECEC">Universal Report</th> 
+<td bgcolor="#90FF90">customizable HTML based templates, custom comment tags</td> 
+<td bgcolor="#90FF90">linked graphical object relationship diagrams</td> 
+<td bgcolor="#90FF90">internal links between routines and objects</td> 
+<td bgcolor="#90FF90">data types extracted and linked</td> 
+</tr> 
+<tr> 
+<th></th> 
+<th>possibility of extended customization</th> 
+<th>generated diagrams</th> 
+<th>highlighting and linking of generated doc</th> 
+<th>parameter types extracted</th> 
+</tr> 
+</table> 
+ 
+ 
+<!-- 
+NewPP limit report
+Preprocessor node count: 1351/1000000
+Post-expand include size: 75836/2048000 bytes
+Template argument size: 305/2048000 bytes
+Expensive parser function count: 1/500
+--> 
+ 
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1531987-0!1!0!default!!en!2 and timestamp 20081115185712 --> 
+<div class="printfooter"> 
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Comparison_of_documentation_generators">http://en.wikipedia.org/wiki/Comparison_of_documentation_generators</a>"</div> 
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>:&#32;<span dir='ltr'><a href="/wiki/Category:Software_comparisons" title="Category:Software comparisons">Software comparisons</a></span> | <span dir='ltr'><a href="/wiki/Category:Documentation_generators" title="Category:Documentation generators">Documentation generators</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden category:&#32;<span dir='ltr'><a href="/wiki/Category:Accuracy_disputes_from_March_2008" title="Category:Accuracy disputes from March 2008">Accuracy disputes from March 2008</a></span></div></div>			<!-- end content --> 
+						<div id='div20' class="visualClear"></div> 
+		</div> 
+	</div> 
+		</div> 
+		<div id="column-one"> 
+	<div id="p-cactions" class="portlet"> 
+		<h5>Views</h5> 
+		<div class="pBody"> 
+			<ul> 
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/wiki/Comparison_of_documentation_generators" title="View the content page [c]" accesskey="c">Article</a></li> 
+				 <li id="ca-talk"><a href="/wiki/Talk:Comparison_of_documentation_generators" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li> 
+				 <li id="ca-edit"><a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=edit" title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e">Edit this page</a></li> 
+				 <li id="ca-history"><a href="/w/index.php?title=Comparison_of_documentation_generators&amp;action=history" title="Past versions of this page [h]" accesskey="h">History</a></li>			</ul> 
+		</div> 
+	</div> 
+	<div class="portlet" id="p-personal"> 
+		<h5>Personal tools</h5> 
+		<div class="pBody"> 
+			<ul> 
+				<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Comparison_of_documentation_generators" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li> 
+			</ul> 
+		</div> 
+	</div> 
+	<div class="portlet" id="p-logo"> 
+		<a style="background-image: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"></a> 
+	</div> 
+	<div class='generated-sidebar portlet' id='p-navigation'> 
+		<h5>Navigation</h5> 
+		<div class='pBody'> 
+			<ul> 
+				<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li> 
+				<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li> 
+				<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content — the best of Wikipedia">Featured content</a></li> 
+				<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li> 
+				<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li> 
+			</ul> 
+		</div> 
+	</div> 
+	<div id="p-search" class="portlet"> 
+		<h5><label for="searchInput">Search</label></h5> 
+		<div id="searchBody" class="pBody"> 
+			<form action="/wiki/Special:Search" id="searchform"><div> 
+				<input id="searchInput" name="search" type="text" title="Search Wikipedia [f]" accesskey="f" value="" /> 
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if one exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search Wikipedia for this text" /> 
+			</div></form> 
+		</div> 
+	</div> 
+	<div class='generated-sidebar portlet' id='p-interaction'> 
+		<h5>Interaction</h5> 
+		<div class='pBody'> 
+			<ul> 
+				<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li> 
+				<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li> 
+				<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li> 
+				<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li> 
+				<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Donate" title="Support us">Donate to Wikipedia</a></li> 
+				<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li> 
+			</ul> 
+		</div> 
+	</div> 
+	<div class="portlet" id="p-tb"> 
+		<h5>Toolbox</h5> 
+		<div class="pBody"> 
+			<ul> 
+				<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Comparison_of_documentation_generators" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li> 
+				<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Comparison_of_documentation_generators" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li> 
+<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li> 
+<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li> 
+				<li id="t-print"><a href="/w/index.php?title=Comparison_of_documentation_generators&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/w/index.php?title=Comparison_of_documentation_generators&amp;oldid=252002112" title="Permanent link to this version of the page">Permanent link</a></li><li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Comparison_of_documentation_generators&amp;id=252002112">Cite this page</a></li>			</ul> 
+		</div> 
+	</div> 
+		</div><!-- end of the left (by default at least) column --> 
+			<div id='div21' class="visualClear"></div> 
+			<div id="footer"> 
+			<ul id="f-list"> 
+				<li id="lastmod"> This page was last modified on 15 November 2008, at 18:57.</li> 
+				<li id="copyright">All text is available under the terms of the <a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License" title="Wikipedia:Text of the GNU Free Documentation License">GNU Free Documentation License</a>. (See <b><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Copyrights" title="Wikipedia:Copyrights">Copyrights</a></b> for details.) <br /> Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org">Wikimedia Foundation, Inc</a>., a U.S. registered <a class='internal' href="http://en.wikipedia.org/wiki/501%28c%29#501.28c.29.283.29" title="501(c)(3)">501(c)(3)</a> <a href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</a> <a class='internal' href="http://en.wikipedia.org/wiki/Non-profit_organization" title="Non-profit organization">nonprofit</a> <a href="http://en.wikipedia.org/wiki/Charitable_organization" title="Charitable organization">charity</a>.<br /></li> 
+				<li id="privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li> 
+				<li id="about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li> 
+				<li id="disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li> 
+			</ul> 
+		</div> 
+</div> 
+ 
+=====================================
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+
+  </body>
+</html>

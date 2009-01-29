@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="C:\GWT\gwt-user.jar;C:\Eclipse-Europa\plugins\org.junit_3.8.2.v200706111738\junit.jar" destdir="javadoc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.codefactory.gwt.domiterator.client" source="1.5" sourcepath="src" splitindex="true" use="true" version="true">
+            <link href="file:/C:/GWT/doc/"/>
+            <link href="http://java.sun.com/javase/6/docs/api/"/>
+        </javadoc>
+    </target>
+</project>

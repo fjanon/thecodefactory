@@ -1,9 +1,10 @@
 #summary One-sentence summary of this page.
 
+How to use the PickerPanel and the ColorPicker derived from it.
+
 = Introduction =
 
-Add your content here.
-
+The PickerPanel is a generic picker that works with a PickerCellManager and IPickerCells. The PickerPanel can by subclassed to implement specialized instances, like the ColorPicker shown as an example. 
 
 = Details =
 

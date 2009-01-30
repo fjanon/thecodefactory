@@ -1,0 +1,9 @@
+<module>
+  <!-- Module used to package the ColorPicker as a library -->
+  <inherits name="com.google.gwt.user.User"/>
+  <!-- Need this because the source code is one directory below (colorpicker) the xml file -->
+<!--  Changed the project structure to be like the default, we don't need the sub directory anymore -->
+<!--
+  <source path="colorpicker/client"/>
+-->
+</module>

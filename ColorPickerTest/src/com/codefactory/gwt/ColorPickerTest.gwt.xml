@@ -1,0 +1,23 @@
+<module>
+
+      <!-- Inherit the core Web Toolkit stuff.                        -->
+      <!--  It's not a Java class, it's a file: "User.gwt.xml" in the directory "com.google.gwt.user" in the gwt-user.jar file! -->
+      <inherits name='com.google.gwt.user.User'/>
+	
+      <!-- Inherit the default GWT style sheet.  You can change       -->
+      <!-- the theme of your GWT application by uncommenting          -->
+      <!-- any one of the following lines.                            -->
+      <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+      <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+      <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+      <!-- Other module inherits                                      -->
+
+
+      <!-- Specify the app entry point class.                         -->
+      <entry-point class='com.codefactory.gwt.client.ColorPickerTest'/>
+    
+      <!-- Specify the application specific style sheet.              -->
+      <stylesheet src='ColorPickerTest.css' />
+	
+</module>

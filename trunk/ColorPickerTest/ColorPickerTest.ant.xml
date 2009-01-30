@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="ColorPickerTest" default="compile" basedir=".">
+  <description>
+    ColorPickerTest build file.  This is used to package up your project as a jar,
+    if you want to distribute it.  This isn't needed for normal operation.
+  </description>
+
+  <!-- set classpath -->
+  <path id="project.class.path">
+    <pathelement path="${java.class.path}/"/>
+    <pathelement path="C:/GWT/gwt-user.jar"/>
+
+    <!-- Additional dependencies (such as junit) go here -->
+  </path>
+
+  <target name="compile" description="Compile src to bin">
+    <mkdir dir="bin"/>
+<!-- Changed the source 1.4 to 1.5 for the Picker widget FJ 2009-01-19 -->
+<!--
+  	<javac srcdir="src:test" destdir="bin" includes="**" debug="on" debuglevel="lines,vars,source" source="1.4">
+-->
+    <javac srcdir="src:test" destdir="bin" includes="**" debug="on" debuglevel="lines,vars,source" source="1.5">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+
+  <target name="package" depends="compile" description="Package up the project as a jar">
+    <jar destfile="ColorPickerTest.jar">
+      <fileset dir="bin">
+        <include name="**/*.class"/>
+      </fileset>
+      <!-- Get everything; source, modules, html files -->
+      <fileset dir="src">
+        <include name="**"/>
+      </fileset>
+      <fileset dir="test">
+        <include name="**"/>
+      </fileset>
+    </jar>
+  </target>
+
+<!-- Added target to build the jar with only the Picker widget elements FJ 2009-01-19 -->
+  <target name="jar" depends="compile"
+    description="creates a module JAR that other GWT applications can use">
+  	<mkdir dir="build"/>
+    <delete file="build/PickerPanel.jar"/>
+    <jar destfile="build/PickerPanel.jar">
+        <fileset dir="bin">
+          <exclude name="**/*Test.*"/>
+          <include name="**/*.class"/>
+        </fileset>
+        <fileset dir="src">
+          <exclude name="**/*Test.*"/>
+            <include name="**/*.java"/>
+            <include name="**/CodeFactory.gwt.xml"/>
+        </fileset>
+    </jar>
+  </target>
+	
+  <target name="clean">
+    <delete file="ColorPickerTest.jar"/>
+    <delete file="build/PickerPanel.jar"/>
+    <!-- Delete the bin directory tree -->
+    <delete>
+      <fileset dir="bin" includes="**/*.class"/>
+    </delete>
+  </target>
+
+  <target name="all" depends="package"/>
+
+</project>

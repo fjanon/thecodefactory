@@ -1,0 +1,50 @@
+body
+	{
+	 font-size: 100%;
+	 font-family: "Arial", sans-serif;
+	 padding: 0px 50px;
+	 width: 800px;
+	 cursor: default;
+	}
+
+.Xgwt-PopupPanel {
+	background: white none repeat scroll 0 0;
+	border: 3px solid #C3D9FF;
+	padding: 3px;
+	}
+
+.gwt-PopupPanel.picker {
+	background-color: #EEE;	/* light grey */
+	border-collapse: separate; /* separate collapse */
+	border: 1px gray solid;
+	padding: 1px;
+}
+
+.picker td {
+	border: 1px #EEE solid;	/* Needs to be the same color as the table background, otherwise a white background shows */
+	border-bottom: 3px #EEE solid; /* Needs to be the same color as the table background, otherwise a white background shows */
+}
+
+.picker .gwt-Label {
+	margin: 2px;
+	width: 16px;
+	height: 16px;
+}
+
+.picker td.selected {
+	border-color: #555;	/* dark grey border when selected */
+}
+
+.picker td.mouseover, .picker td:hover {
+	border-color: #888;	/* lighter border color than selected */
+}
+
+#colorpicker2 {
+	width: 100px;
+}
+
+#colorpicker3 {
+	Xwidth: 400px;
+	Xbackground-color: red;
+	border: 1px black solid;
+}

@@ -87,4 +87,4 @@ Iteration through 2700 elements on a Duo Core 1.66Ghz laptop takes:
 
 See the tests and examples in DomIteratorDemo.java.
 
-There is no JUnit tests in the GWT project because the GWT/JUnit architecture doesn't pass an HTML page to the tests. The DOM structure would have to be built by program in the unit test setup, a bit time consuming for a 2700 element structure.
+There are no JUnit tests per say in the GWT project because the GWT/JUnit architecture doesn't pass an HTML page to the tests. The DOM structure would have to be built by program in the unit test setup, a bit time consuming for a 2700 element structure. Instead, the tests are in com.codefactory.gwt.domiteratordemo.client.DomIteratorDemo.java and in its associated HTML page DomIteratorDemo.html. The tests show how to use the different constructors and matchers.

@@ -37,6 +37,9 @@ The search starts with the DOM 'body' element by default when no start element i
 The DomIterator implements the _java.util.Iterator_ and the _java.lang.Iterable_ interfaces.
  It can be used in two ways: with an _java.util.Iterator_ or as an _java.lang.Iterable_ with a Java 5 'for' loop:
 <pre>
+import com.codefactory.gwt.domiterator.client.DomIterator;
+import com.codefactory.gwt.domiterator.client.SingleClassnameCaseSensitiveMatcher;
+...
 // Different predefined matchers
 IElementMatcher matcher = new SingleClassnameCaseSensitiveMatcher("theClassname");
 or
@@ -56,6 +59,7 @@ or
 DomIterator di = new DomIterator(matcher, "startElementId"); // start from the element with this id
 or
 DomIterator di = new DomIterator(matcher, anElement);	// start from that element
+
 
 // Use the DomIterator as an Iterator
 Element element = null;

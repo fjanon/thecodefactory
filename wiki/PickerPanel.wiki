@@ -10,10 +10,10 @@ Add your content here.
 Screen shots of PickerPanel used as a ColorPicker
 
  * Square 4 rows x 4 columns colors
-http://code.google.com/p/thecodefactory/source/browse/trunk/PickerDemo/ColorPicker-Square-4x4.jpg 
+http://thecodefactory.googlecode.com/svn/trunk/PickerDemo/ColorPicker-Square-4x4.jpg 
 
  * Vertical-16x1.jpg Vertical 16 rows x 1 col
-http://thecodefactory.googlecode.com/svn/trunk/PickerDemo/ColorPicker-Horizontal-1x16.jpg
+http://thecodefactory.googlecode.com/svn/trunk/PickerDemo/ColorPicker-Vertical-16x1.jpg
 
  * Horizontal 1 row x 16 cols
-http://code.google.com/p/thecodefactory/source/browse/trunk/PickerDemo/ColorPicker-Horizontal-1x16.jpg
+http://thecodefactory.googlecode.com/svn/trunk/PickerDemo/ColorPicker-Horizontal-1x16.jpg

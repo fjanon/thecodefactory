@@ -1,6 +1,4 @@
-#summary One-sentence summary of this page.
 #labels Featured
-
 = Introduction =
 
 First draft of some refactoring done on Grails projects. Created an "InstanceController", an "InstanceService" and "crud.gsp", "list.gsp" to cut down editing and code duplication across domain classes.

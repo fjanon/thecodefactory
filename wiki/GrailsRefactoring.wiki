@@ -5,7 +5,7 @@ First draft of some refactoring done on Grails projects. Created an "InstanceCon
 
 = Details =
 
-This is the code for the blog at 
+This is the code for the blog at [http://fjanon.blogspot.com/2009/10/over-my-last-few-grails-projects.html]
 
 ----
 in /domainclass/Streettype.groovy
